@@ -1,5 +1,5 @@
 const PuppeteerService = require('./puppeteer/puppeteer-service.js');
-const QuoteScraper = require('./common/quote-scraper');
+const QuoteScraper = require('./quote-scraper/quote-scraper');
 
 function main() {
     const puppeteerService = new PuppeteerService();
