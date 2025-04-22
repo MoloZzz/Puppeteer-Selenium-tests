@@ -21,7 +21,7 @@ class DjinniScraper {
       
           const company = card.querySelector('a[data-analytics="company_page"]')?.innerText.trim();
           const location = card.querySelector('.location-text')?.innerText.trim();
-          const remote = card.innerText.includes('віддалено') ? 'Тільки віддалено' : 'Офіс/гібрид';
+          const remote = card.innerText.includes('віддалено') ? 'Тільки віддалено' : 'Офіс';
       
           const experience = Array.from(card.querySelectorAll('span.text-nowrap'))
             .find(span => span.innerText.includes('досвіду'))?.innerText.trim();

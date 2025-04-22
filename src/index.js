@@ -6,7 +6,7 @@ function main() {
     const puppeteerServiceForQuoteScraper = new PuppeteerService();
     const puppeteerServiceForDjinniScraper = new PuppeteerService();
     const scraper = new QuoteScraper('https://quotes.toscrape.com', puppeteerServiceForQuoteScraper);
-    const djinniScraper = new DjinniScraper('https://djinni.co/jobs/?primary_keyword=Node.js', puppeteerServiceForDjinniScraper);
+    const djinniScraper = new DjinniScraper('https://djinni.co/jobs/?primary_keyword=Node.js&page=2', puppeteerServiceForDjinniScraper);
 
     scraper.run();
     djinniScraper.run();
